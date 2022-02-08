@@ -1,11 +1,44 @@
 {
   
+    
+        "post0": {
+            "title": "Jupyter",
+            "content": "Getting started with Jupyter . Jupyter notebook . Jupyter Notebook is a web application for creating and sharing computational (code + notebooks + data) documents. JupyterLab is the next generation implementation of Jupyter notebooks.1 . Jupyter architecture consists of . a kernel (which executes code) | a client (the browser) | a notebook (contains code, metadata, contents, outputs) | a notebook server (saves and loads notebooks) | . Documentation: Jupyter . Setup . Create a virtual environment . python3 -m venv py3 . Activate a virtual environment . source py3/bin/activate . Install Jupyter Lab . pip install jupyterlab pip install ipykernel . Add kernel . ipython kernel install --user --name=py3 . Launch Jupyter Lab . jupyter-lab . To list installed kernels . jupyter kernelspec list . To uninstall kernels . jupyter kernelspec uninstall py3 . Footnotes . Project jupyter [Internet]. [cited 2022 Jan 24]. Available from: https://jupyter.org &#8617; . |",
+            "url": "https://joshisaumil.github.io/ml-blog/2022/01/22/jupyter.html",
+            "relUrl": "/2022/01/22/jupyter.html",
+            "date": " • Jan 22, 2022"
+        }
+        
+    
+  
+    
+        ,"post1": {
+            "title": "Cron",
+            "content": "Scheduling Cron Jobs with Crontab . Setting up scheduled jobs in unix/mac is simple. Here is a description of cron. . There are five steps to create a simple task. . Set up a bash script that describes the task. . In the terminal, change directory to a local folder and edit a new file. . cd ~/path/to/dir nano hello.sh . Add the following lines to the file, press control + X to save and exit. . now=$(date) echo &quot;Hello World, it&#39;s $now&quot; . | Create a cron file that schedules the task. . In the terminal, change directory to a local folder and edit a new file. . cd ~/path/to/dir nano cron . Add the following line to the file, press control + X to save and exit. . 31 16 * * * cd ~/path/to/dir/ &amp;&amp; bash ./hello.sh &gt;| hello.log . The cron task syntax is as follows: . (minute) (hour) (day of the month) (month) (day of the week) &lt;command&gt; . Specifying a * in place of each parameter defaults to all. The example above refers to a task that runs every day of every month at 4:31 pm local time. . | Submit the cron task. . In the terminal, type the following to submit the tasks in the cronjob file. . crontab cronjob . | Verify that the job was added to the task list. . In the terminal, type the following to list the tasks. . crontab -l . | Check the output result after the task has run. . In the terminal, type the following to see the output. . cat hello.log . Here is a sample output . Hello World, it&#39;s Wed Mar 31 16:31:00 MDT 2021 . | There is a lot you can do with crontab. The above will hopefully help you get started. . Other useful resources: https://ole.michelsen.dk/blog/schedule-jobs-with-crontab-on-mac-osx https://opensource.com/article/17/11/how-use-cron-linux https://crontab.guru/ .",
+            "url": "https://joshisaumil.github.io/ml-blog/2022/01/17/cron.html",
+            "relUrl": "/2022/01/17/cron.html",
+            "date": " • Jan 17, 2022"
+        }
+        
+    
+  
+    
+        ,"post2": {
+            "title": "Welcome",
+            "content": "Welcome . Hello, World. .",
+            "url": "https://joshisaumil.github.io/ml-blog/2022/01/15/welcome.html",
+            "relUrl": "/2022/01/15/welcome.html",
+            "date": " • Jan 15, 2022"
+        }
+        
+    
+  
 
   
   
 
   
-      "page1": {
+      ,"page1": {
           "title": "About Me",
           "content": "Linkedin Google Scholar .",
           "url": "https://joshisaumil.github.io/ml-blog/about/",
