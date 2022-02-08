@@ -97,10 +97,9 @@ window.onload = wrap_img;
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
 <li class="toc-entry toc-h2"><a href="#introduction">Introduction</a></li>
-<li class="toc-entry toc-h2"><a href="#define-the-task">Define the task</a></li>
+<li class="toc-entry toc-h2"><a href="#describe-the-task">Describe the task</a></li>
 <li class="toc-entry toc-h2"><a href="#schedule-the-task">Schedule the task</a></li>
 <li class="toc-entry toc-h2"><a href="#submit-the-task">Submit the task</a></li>
-<li class="toc-entry toc-h2"><a href="#verify-the-task">Verify the task</a></li>
 <li class="toc-entry toc-h2"><a href="#check-results">Check results</a></li>
 </ul><h2 id="introduction">
 <a class="anchor" href="#introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction</h2>
@@ -111,8 +110,8 @@ window.onload = wrap_img;
 
 <p>There are five steps to create a simple task.</p>
 
-<h2 id="define-the-task">
-<a class="anchor" href="#define-the-task" aria-hidden="true"><span class="octicon octicon-link"></span></a>Define the task</h2>
+<h2 id="describe-the-task">
+<a class="anchor" href="#describe-the-task" aria-hidden="true"><span class="octicon octicon-link"></span></a>Describe the task</h2>
 
 <p>Set up a bash script that describes the task.</p>
 
@@ -151,12 +150,7 @@ nano cron
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>crontab cronjob
 </code></pre></div></div>
 
-<h2 id="verify-the-task">
-<a class="anchor" href="#verify-the-task" aria-hidden="true"><span class="octicon octicon-link"></span></a>Verify the task</h2>
-
-<p>Verify that the job was added to the task list.</p>
-
-<p>In the terminal, type the following to list the tasks.</p>
+<p>Verify that crontab was updated with the new task list. In the terminal, type the following to list the tasks.</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>crontab <span class="nt">-l</span>
 </code></pre></div></div>
