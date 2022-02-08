@@ -3,9 +3,8 @@ layout: page
 title: About Me
 permalink: /about/
 ---
+# About
 
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
+[Linkedin](https://linkedin.com/in/saumil-joshi-512b1715)  
+[Google Scholar](https://scholar.google.com/citations?user=SjlLkVoAAAAJ&hl=en)  
 
-
-
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
