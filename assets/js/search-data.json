@@ -2,10 +2,10 @@
   
     
         "post0": {
-            "title": "Jupyter",
-            "content": "Getting started with Jupyter . Jupyter notebook . Jupyter Notebook is a web application for creating and sharing computational (code + notebooks + data) documents. JupyterLab is the next generation implementation of Jupyter notebooks.1 . Jupyter architecture consists of . a kernel (which executes code) | a client (the browser) | a notebook (contains code, metadata, contents, outputs) | a notebook server (saves and loads notebooks) | . Documentation: Jupyter . Setup . Create a virtual environment . python3 -m venv py3 . Activate a virtual environment . source py3/bin/activate . Install Jupyter Lab . pip install jupyterlab pip install ipykernel . Add kernel . ipython kernel install --user --name=py3 . Launch Jupyter Lab . jupyter-lab . To list installed kernels . jupyter kernelspec list . To uninstall kernels . jupyter kernelspec uninstall py3 . Footnotes . Project jupyter [Internet]. [cited 2022 Jan 24]. Available from: https://jupyter.org &#8617; . |",
-            "url": "https://joshisaumil.github.io/ml-blog/2022/01/22/jupyter.html",
-            "relUrl": "/2022/01/22/jupyter.html",
+            "title": "Getting started with Jupyter",
+            "content": "Jupyter notebook . Jupyter Notebook is a web application for creating and sharing computational (code + notebooks + data) documents. JupyterLab is the next generation implementation of Jupyter notebooks.1 . Jupyter architecture consists of . a kernel (which executes code) | a client (the browser) | a notebook (contains code, metadata, contents, outputs) | a notebook server (saves and loads notebooks) | . Documentation: Jupyter . Setup . Create a virtual environment . python3 -m venv py3 . Activate a virtual environment . source py3/bin/activate . Install Jupyter Lab . pip install jupyterlab pip install ipykernel . Add kernel . ipython kernel install --user --name=py3 . Launch Jupyter Lab . jupyter-lab . To list installed kernels . jupyter kernelspec list . To uninstall kernels . jupyter kernelspec uninstall py3 . Footnotes . Project jupyter [Internet]. [cited 2022 Jan 24]. Available from: https://jupyter.org &#8617; . |",
+            "url": "https://joshisaumil.github.io/ml-blog/markdown/2022/01/22/jupyter.html",
+            "relUrl": "/markdown/2022/01/22/jupyter.html",
             "date": " • Jan 22, 2022"
         }
         
