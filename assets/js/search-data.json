@@ -74,8 +74,8 @@
 
   
       ,"page3": {
-          "title": "References",
-          "content": "References . Markdown Guide . Datasets . Google Dataset Search IBM Data Asset Exchange Tensorflow datasets . Blogs . Google AI blog Deep Mind blog Berkeley AI Research blog Papers with code IBM Research blog Microsoft AI blog Microsoft Research blog Sanyam Bhutani’s blog: Interviews Sebastian Ruder’s NLP/ML blog Lilian Weng’s blog . Concepts . Big O Notation Bagging and Boosting .",
+          "title": "Reference Links",
+          "content": "Guides . Markdown Guide . Datasets . Google Dataset Search IBM Data Asset Exchange Tensorflow datasets . Blogs . Google AI blog Deep Mind blog Berkeley AI Research blog Papers with code IBM Research blog Microsoft AI blog Microsoft Research blog Sanyam Bhutani’s blog: Interviews Sebastian Ruder’s NLP/ML blog Lilian Weng’s blog . Concepts . Big O Notation Bagging and Boosting .",
           "url": "https://joshisaumil.github.io/ml-blog/references/",
           "relUrl": "/references/",
           "date": ""
