@@ -1,12 +1,12 @@
 ---
 toc: false
 layout: post
-description: References and useful links
+description: Useful links
 categories: [markdown]
-title: References
+title: Reference Links
 ---
 
-## References
+## Guides
 
 [Markdown Guide](https://www.markdownguide.org/basic-syntax/)  
 
