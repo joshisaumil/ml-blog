@@ -133,6 +133,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h3"><a href="#3.-Scale-images">3. Scale images </a></li>
 <li class="toc-entry toc-h3"><a href="#4.-Create-model">4. Create model </a></li>
 <li class="toc-entry toc-h3"><a href="#5.-Plot-results">5. Plot results </a></li>
+<li class="toc-entry toc-h3"><a href="#6.-Streaming-images-from-directory">6. Streaming images from directory </a></li>
 </ul>
 </li>
 </ul><!--
@@ -445,6 +446,66 @@ _________________________________________________________________
 
 </div>
 
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="6.-Streaming-images-from-directory">
+<a class="anchor" href="#6.-Streaming-images-from-directory" aria-hidden="true"><span class="octicon octicon-link"></span></a>6. Streaming images from directory<a class="anchor-link" href="#6.-Streaming-images-from-directory"> </a>
+</h3>
+<p>Images can be streamed directly from a folder with training and validation data.</p>
+<ul>
+<li>cat-dog/<ul>
+<li>training/<ul>
+<li>cat/ containing cat images</li>
+<li>dog/ containing dog images</li>
+</ul>
+</li>
+<li>validation/<ul>
+<li>cat/</li>
+<li>dog/</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">tensorflow.keras.preprocessing.image</span> <span class="kn">import</span> <span class="n">ImageDataGenerator</span>
+<span class="n">tr_gen</span> <span class="o">=</span> <span class="n">ImageDataGenerator</span><span class="p">(</span>
+      <span class="n">rescale</span><span class="o">=</span><span class="mf">1.</span><span class="o">/</span><span class="mi">255</span><span class="p">,</span>
+      <span class="n">rotation_range</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span>
+      <span class="n">width_shift_range</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span>
+      <span class="n">height_shift_range</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span>
+      <span class="n">shear_range</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span>
+      <span class="n">zoom_range</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span>
+      <span class="n">horizontal_flip</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+      <span class="n">fill_mode</span><span class="o">=</span><span class="s1">'nearest'</span><span class="p">)</span>
+
+<span class="n">val_gen</span> <span class="o">=</span> <span class="n">ImageDataGenerator</span><span class="p">(</span><span class="n">rescale</span><span class="o">=</span><span class="mi">1</span><span class="o">/</span><span class="mi">255</span><span class="p">)</span>
+
+<span class="c1"># stream training images from directory</span>
+<span class="n">training</span> <span class="o">=</span> <span class="n">tr_gen</span><span class="o">.</span><span class="n">flow_from_directory</span><span class="p">(</span><span class="s1">'./cat-dog/training'</span><span class="p">,</span>  <span class="n">target_size</span><span class="o">=</span><span class="p">(</span><span class="mi">300</span><span class="p">,</span> <span class="mi">300</span><span class="p">),</span>  <span class="n">batch_size</span><span class="o">=</span><span class="mi">128</span><span class="p">,</span>  <span class="n">class_mode</span><span class="o">=</span><span class="s1">'binary'</span><span class="p">)</span>
+<span class="n">validation</span> <span class="o">=</span> <span class="n">val_gen</span><span class="o">.</span><span class="n">flow_from_directory</span><span class="p">(</span><span class="s1">'./cat-dog/validation'</span><span class="p">,</span>  <span class="n">target_size</span><span class="o">=</span><span class="p">(</span><span class="mi">300</span><span class="p">,</span> <span class="mi">300</span><span class="p">),</span>  <span class="n">batch_size</span><span class="o">=</span><span class="mi">128</span><span class="p">,</span>  <span class="n">class_mode</span><span class="o">=</span><span class="s1">'binary'</span><span class="p">)</span>
+
+<span class="n">history</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit_generator</span><span class="p">(</span><span class="n">training</span><span class="p">,</span> <span class="n">steps_per_epoch</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">validation_data</span> <span class="o">=</span> <span class="n">validation</span><span class="p">,</span> <span class="n">validation_steps</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
+</pre></div>
+
+    </div>
 </div>
 </div>
 
